@@ -95,13 +95,12 @@ body {
 
 .site-header {
   position: sticky;
-  top: var(--space-4);
   z-index: 50;
   background: oklch(from var(--color-bg) l c h / 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid oklch(from var(--color-text) l c h / 0.08);
-  border-radius: var(--radius-lg);
+  border-radius: 4px;
   padding: var(--space-3) 0;
   margin-bottom: var(--space-12);
 }
@@ -116,7 +115,8 @@ body {
 .brand-group {
   display: flex;
   flex-direction: column;
-  gap: var(--space-1);
+  align-items: flex-start;
+  gap: 2px;
 }
 
 .site-tagline {
@@ -156,7 +156,7 @@ body {
 .tabs-nav {
   display: flex;
   gap: var(--space-1);
-  background: oklch(from var(--color-divider) l c h / 0.05);
+  background: oklch(from var(--color-divider) l c h / 0.5);
   padding: var(--space-1);
   margin-top: var(--space-12);
   margin-bottom: var(--space-8);
@@ -214,7 +214,7 @@ body {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 10;
-  border-radius: 4px;
+  border-radius: 2px;
   overflow: hidden;
   background: var(--color-surface);
 }
