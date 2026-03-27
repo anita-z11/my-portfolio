@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Field Notes — Portfolio</title>
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=archivo@400,401,700&f[]=clash-display@500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../../index.html" class="site-logo">Anita Zhang</a>
+        <button
+          data-theme-toggle
+          aria-label="Switch to dark mode"
+          class="theme-toggle"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <article class="article-page">
+      <a href="../../index.html" class="back-link">&larr; Back to portfolio</a>
+      <h1>Field Notes</h1>
+      <p class="article-date">January 2026</p>
+      <div class="article-body">
+        <p>
+          I carry a small notebook on every trip. Not for planning — for
+          noticing. The things that catch my eye rarely survive the journey home
+          intact in memory, so I write them down while they are still sharp.
+        </p>
+        <p>
+          A red-tailed hawk circling above a wheat field. The exact shade of
+          green where new growth meets dead grass. The sound of wind through dry
+          reeds, which is nothing like wind through leaves. These details
+          accumulate, and when I look back through old entries, they bring a
+          place back to life more vividly than any photograph.
+        </p>
+        <p>
+          The habit has made me a better observer. I notice more now because I
+          know I will want to write it down later. Paying attention is a skill,
+          and like any skill, it improves with deliberate practice.
+        </p>
+      </div>
+    </article>
+    <footer class="site-footer">
+      <div class="container"></div>
+    </footer>
+  </body>
+</html>

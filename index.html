@@ -1,29 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <!-- character render, responsive setting for devices, tab display, google snaps text -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Science writer and journalist" />
-    <title>AnitaZ - Field</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Anita's Field</title>
+    <meta
+      name="description"
+      content="Work portfolio of science and technology reporter Anita Zhang."
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=archivo@400,401,700&f[]=clash-display@500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font-family: 'Archivo', sans-serif;
+  font-family: 'Clash Display', sans-serif; -->
+    <!-- .chocolate-classical-sans-regular {
+  font-family: "Chocolate Classical Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  } -->
   </head>
   <body>
-    <header>
-      <h1>Anita Zhang</h1>
-      <h2>Science writer. Journalist.</h2>
+    <!-- Skip Link -->
+    <a
+      href="#main-content"
+      class="sr-only"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px;
+        background: var(--color-primary);
+        color: #fff;
+        z-index: 100;
+      "
+      >Skip to content</a
+    >
+
+    <!-- ====== HEADER ====== -->
+    <!-- logo & dark mode -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="site-logo" aria-label="Home"
+          >Anita Zhang</a
+        >
+        <button
+          data-theme-toggle
+          aria-label="Switch to dark mode"
+          class="theme-toggle"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
     </header>
-    <img src="Bilder/BananaTree.jpg" alt="BananaTree" />
-    <p class="schreiben">
-      Banana Forest in the Doi Inthanon Mountain Region in Chiang Mai, Thailand.
-      Locals take the banana blossoms to make salad or curry.
-    </p>
-    <p>
-      <a
-        href="https://drive.proton.me/urls/SA2Q23459R#aqwd1FpAfUNo"
-        target="_blank"
-        >CV</a
+
+    <!-- ====== MAIN ====== -->
+    <main id="main-content" class="container">
+      <!-- Tab Navigation -->
+      <nav class="tabs-nav" role="tablist" aria-label="Content categories">
+        <button
+          class="tab-btn"
+          role="tab"
+          data-tab="panel-nature"
+          aria-selected="true"
+          aria-controls="panel-nature"
+          id="tab-nature"
+        >
+          Wilderness
+        </button>
+        <button
+          class="tab-btn"
+          role="tab"
+          data-tab="panel-urban"
+          aria-selected="false"
+          aria-controls="panel-urban"
+          id="tab-urban"
+        >
+          Material
+        </button>
+      </nav>
+
+      <!-- ====== TAB 1: NATURE ====== -->
+      <section
+        class="tab-panel"
+        id="panel-nature"
+        role="tabpanel"
+        aria-labelledby="tab-nature"
+        aria-hidden="false"
       >
-      <a href="contact.html">Contact me</a>
-    </p>
+        <!-- Gallery -->
+        <div class="gallery-section">
+          <h2></h2>
+          <div class="gallery-frame">
+            <img
+              id="gallery-img-1"
+              src=""
+              alt="Loading photo..."
+              width="1200"
+              height="500"
+              loading="eager"
+            />
+          </div>
+          <p class="gallery-caption" id="gallery-cap-1">Loading...</p>
+          <p class="gallery-hint">Refresh the page to see a different photo.</p>
+        </div>
+
+        <!-- Articles -->
+        <div class="articles-section">
+          <h2>Articles</h2>
+          <div class="articles-box">
+            <a
+              href="./articles/tab1/trails-i-love.html"
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="arrow">&mdash;</span>
+              <span class="label">
+                Trails I Love
+                <span class="meta">A guide to my favorite hiking routes</span>
+              </span>
+            </a>
+            <a
+              href="./articles/tab1/seasons-of-light.html"
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="arrow">&mdash;</span>
+              <span class="label">
+                Seasons of Light
+                <span class="meta"
+                  >How natural light shifts through the year</span
+                >
+              </span>
+            </a>
+            <a
+              href="./articles/tab1/field-notes.html"
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="arrow">&mdash;</span>
+              <span class="label">
+                Field Notes
+                <span class="meta">Observations from the wilderness</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== TAB 2: URBAN ====== -->
+      <section
+        class="tab-panel"
+        id="panel-urban"
+        role="tabpanel"
+        aria-labelledby="tab-urban"
+        aria-hidden="true"
+      >
+        <!-- Gallery -->
+        <div class="gallery-section">
+          <h2>Gallery</h2>
+          <div class="gallery-frame">
+            <img
+              id="gallery-img-2"
+              src=""
+              alt="Loading photo..."
+              width="1200"
+              height="500"
+              loading="eager"
+            />
+          </div>
+          <p class="gallery-caption" id="gallery-cap-2">Loading...</p>
+          <p class="gallery-hint">Refresh the page to see a different photo.</p>
+        </div>
+
+        <!-- Articles -->
+        <div class="articles-section">
+          <h2>Articles</h2>
+          <div class="articles-box">
+            <a
+              href="./articles/tab2/concrete-and-glass.html"
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="arrow">&#8594;</span>
+              <span class="label">
+                Concrete and Glass
+                <span class="meta">Architecture that shaped a skyline</span>
+              </span>
+            </a>
+            <a
+              href="./articles/tab2/night-markets.html"
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="arrow">&#8594;</span>
+              <span class="label">
+                Night Markets
+                <span class="meta"
+                  >Street food, neon signs, and the late crowd</span
+                >
+              </span>
+            </a>
+            <a
+              href="./articles/tab2/the-commute.html"
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="arrow">&#8594;</span>
+              <span class="label">
+                The Commute
+                <span class="meta">Finding beauty in the daily routine</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js" defer></script>
   </body>
 </html>
