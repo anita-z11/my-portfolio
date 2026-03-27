@@ -82,32 +82,32 @@
         <button
           class="tab-btn"
           role="tab"
-          data-tab="panel-nature"
+          data-tab="panel-urban"
           aria-selected="true"
+          aria-controls="panel-urban"
+          id="tab-urban"
+        >
+          Man-made
+        </button>
+        <button
+          class="tab-btn"
+          role="tab"
+          data-tab="panel-nature"
+          aria-selected="false"
           aria-controls="panel-nature"
           id="tab-nature"
         >
           Wilderness
         </button>
-        <button
-          class="tab-btn"
-          role="tab"
-          data-tab="panel-urban"
-          aria-selected="false"
-          aria-controls="panel-urban"
-          id="tab-urban"
-        >
-          Material
-        </button>
       </nav>
 
-      <!-- ====== TAB 1: NATURE ====== -->
+      <!-- ====== TAB 1: URBAN ====== -->
       <section
         class="tab-panel"
-        id="panel-nature"
+        id="panel-urban"
         role="tabpanel"
-        aria-labelledby="tab-nature"
-        aria-hidden="false"
+        aria-labelledby="tab-urban"
+        aria-hidden="true"
       >
         <!-- Gallery -->
         <div class="gallery-section">
@@ -123,76 +123,6 @@
             />
           </div>
           <p class="gallery-caption" id="gallery-cap-1">Loading...</p>
-        </div>
-
-        <!-- Articles -->
-        <div class="articles-section">
-          <h2></h2>
-          <div class="articles-box">
-            <a
-              href="./articles/tab1/trails-i-love.html"
-              class="article-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="arrow">&mdash;</span>
-              <span class="label">
-                Trails I Love
-                <span class="meta">A guide to my favorite hiking routes</span>
-              </span>
-            </a>
-            <a
-              href="./articles/tab1/seasons-of-light.html"
-              class="article-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="arrow">&mdash;</span>
-              <span class="label">
-                Seasons of Light
-                <span class="meta"
-                  >How natural light shifts through the year</span
-                >
-              </span>
-            </a>
-            <a
-              href="./articles/tab1/field-notes.html"
-              class="article-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="arrow">&mdash;</span>
-              <span class="label">
-                Field Notes
-                <span class="meta">Observations from the wilderness</span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ====== TAB 2: URBAN ====== -->
-      <section
-        class="tab-panel"
-        id="panel-urban"
-        role="tabpanel"
-        aria-labelledby="tab-urban"
-        aria-hidden="true"
-      >
-        <!-- Gallery -->
-        <div class="gallery-section">
-          <h2></h2>
-          <div class="gallery-frame">
-            <img
-              id="gallery-img-2"
-              src=""
-              alt="Loading photo..."
-              width="1200"
-              height="500"
-              loading="eager"
-            />
-          </div>
-          <p class="gallery-caption" id="gallery-cap-2">Loading...</p>
         </div>
 
         <!-- Articles -->
@@ -235,6 +165,76 @@
               <span class="label">
                 The Commute
                 <span class="meta">Finding beauty in the daily routine</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== TAB 2: NATURE ====== -->
+      <section
+        class="tab-panel"
+        id="panel-nature"
+        role="tabpanel"
+        aria-labelledby="tab-nature"
+        aria-hidden="false"
+      >
+        <!-- Gallery -->
+        <div class="gallery-section">
+          <h2></h2>
+          <div class="gallery-frame">
+            <img
+              id="gallery-img-2"
+              src=""
+              alt="Loading photo..."
+              width="1200"
+              height="500"
+              loading="eager"
+            />
+          </div>
+          <p class="gallery-caption" id="gallery-cap-2">Loading...</p>
+        </div>
+
+        <!-- Articles -->
+        <div class="articles-section">
+          <h2></h2>
+          <div class="articles-box">
+            <a
+              href="./articles/tab1/trails-i-love.html"
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="arrow">&mdash;</span>
+              <span class="label">
+                Trails I Love
+                <span class="meta">A guide to my favorite hiking routes</span>
+              </span>
+            </a>
+            <a
+              href="./articles/tab1/seasons-of-light.html"
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="arrow">&mdash;</span>
+              <span class="label">
+                Seasons of Light
+                <span class="meta"
+                  >How natural light shifts through the year</span
+                >
+              </span>
+            </a>
+            <a
+              href="./articles/tab1/field-notes.html"
+              class="article-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="arrow">&mdash;</span>
+              <span class="label">
+                Field Notes
+                <span class="meta">Observations from the wilderness</span>
               </span>
             </a>
           </div>

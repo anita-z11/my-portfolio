@@ -121,7 +121,7 @@ body {
 
 .site-tagline {
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--color-text-muted);
@@ -156,7 +156,7 @@ body {
 .tabs-nav {
   display: flex;
   gap: var(--space-1);
-  background: oklch(from var(--color-divider) l c h / 0.5);
+  background: oklch(from var(--color-divider) l c h / 0.1);
   padding: var(--space-1);
   margin-top: var(--space-12);
   margin-bottom: var(--space-8);
@@ -170,7 +170,7 @@ body {
   padding: var(--space-2) var(--space-4);
   font-family: var(--font-body);
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 300;
   color: var(--color-text-muted);
   border-radius: calc(var(--radius-xl) - var(--space-2));
   text-align: center;
@@ -214,9 +214,9 @@ body {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 10;
-  border-radius: 2px;
+  border-radius: 0px;
   overflow: hidden;
-  background: var(--color-surface);
+  border: 1px solid oklch(from var(--color-text) l c h / 0.08);
 }
 
 .gallery-frame img {
@@ -369,7 +369,7 @@ body {
 
   .gallery-frame {
     aspect-ratio: 4 / 3;
-    border-radius: var(--radius-lg);
+    border-radius: 0;
   }
 
   .articles-box {
